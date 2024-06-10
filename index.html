@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="background-color: black; color: white;">
 	<head>
 		<meta charset="UTF-8"/>
 		<title>Swagger Generator</title>
@@ -32,7 +32,7 @@
 	<body onload="init();">
 		<h1>Swagger Definition Objects Generator</h1>
 		<p>Add your JSON mock to generate Swagger definition objects.</p>
-		<textarea id="JSON" rows="20" cols="55" placeholder="Type your JSON">
+		<textarea id="JSON" rows="20" cols="55" placeholder="Type your JSON" style="background-color: black; color: white;">
 {
 	"numbersMock": {
 		"smallInt": -20,
@@ -54,7 +54,7 @@
 }
 		</textarea>
 	  <button type="button" onclick="convert()">Convert</button>
-		<textarea readonly id="Swagger" rows="20" cols="85" placeholder="Here is your Swagger"></textarea>
+		<textarea readonly id="Swagger" rows="20" cols="85" placeholder="Here is your Swagger" style="background-color: black; color: white;"></textarea>
 		<br>
 		<p>Add values as examples: <input type="checkbox" id="requestExamples"></p>
 		<p>Convert integer values to number: <input type="checkbox" id="noInt"></p>
@@ -66,7 +66,7 @@
 				<option value="boolean">Boolean</option>
 			</select>
 		</p>
-		<p>Output as YAML: <input type="checkbox" id="yamlOut"></p>	
+		<p>Output as YAML: <input type="checkbox" id="yamlOut" checked></p>	
 		<hr>
 		<p>Feel like collaborating? Clone the repository at <a target="_blank" href="https://github.com/Roger13/SwaggerGenerator">GitHub</a></p>
 
